@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Navbar with Hero Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="custom.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Alpha Helix Energy</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- hero section -->
+    <div
+        style="background-image: url(img/Header-Image.jpeg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 85vh;">
+        <div class="masthead-gradient">
+            <header id="navbar_top" class="fixed w-full z-50 bg-transparent text-white">
+                <div class="flex items-center px-5">
+                    <div class="flex flex-wrap justify-center w-full items-center md:justify-between">
+                        <div class="p-4 lg:w-1/3 flex justify-center">
+                            <a class="brand js-target-scroll" href="index.html">
+                                <img id="alpha_logo" src="img/Alpha-Logo-White-1.png" class="logo md:w-56 lg:w-56 w-24"
+                                    alt="logo">
+                            </a>
+                        </div>
+                        <div class="p-4 lg:w-1/3 flex justify-center">
+                            <a class="brand js-target-scroll " href="index.html">
+                                <img id="beta_logo" src="img/Beta-Logo-White-2.png" class="logo md:w-56 lg:w-56 w-24"
+                                    alt="logo">
+                            </a>
+                        </div>
+                        <div class="p-4 lg:w-1/3 flex justify-center">
+                            <a class="brand js-target-scroll " href="index.html">
+                                <img id="delta_logo" src="img/Delta-Logo-White-3.png" class="logo md:w-56 lg:w-56 w-24"
+                                    alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex items-center px-5 py-2 mt-2 justify-center">
+                    <div class="menu text-center">
+                        <!-- menu icons  -->
+                        <div class="md:hidden flex justify-center items-center w-full bg-blue-950 ">
+                            <button aria-label="navigation" type="button" id="clrbtn"
+                                class="md:hidden flex  justify-center items-center text-white text-xl ms-2 transition duration-300 focus:outline-none focus:text-white hover:text-white">Menu<i
+                                    class="fas fa-bars text-3xl" id="bars"></i> </button>
+                        </div>
+                        <div class="navbar js-navbar hidden md:block">
+                            <nav class="navbar navbar-expand-lg navbar-light pb-10 pt-10 mx-auto">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="navbar-nav flex flex-col md:flex-row space-x-6">
+                                        <li class="nav-item"><a href="index.html"
+                                                class="js-target-scroll text-3xl hover:underline text-white">Home</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#about"
+                                                class="js-target-scroll text-3xl hover:underline text-white">About
+                                                Us</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#services"
+                                                class="js-target-scroll text-3xl hover:underline text-white">Services</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#mineral"
+                                                class="js-target-scroll text-3xl hover:underline text-white">Mineral/Royalty
+                                                Owners</a></li>
+                                        <li class="nav-item"><a href="#contact"
+                                                class="js-target-scroll text-3xl hover:underline text-white">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- mobile  menu  -->
+                <div id="navbar" class="hidden bg-purple-600 w-full mx-auto py-8 text-center">
+                    <div class="flex flex-col justify-center items-center w-full">
+                        <a href="index.html"
+                            class="block text-gray-200 cursor-pointer py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 uppercase"
+                            style="text-underline-offset: 8px;">Home</a>
+                        <a href="#about"
+                            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 uppercase"
+                            style="text-underline-offset: 8px;">About us</a>
+                        <a href="#"
+                            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 uppercase"
+                            style="text-underline-offset: 8px;">services</a>
+                        <a href="#minral"
+                            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 uppercase"
+                            style="text-underline-offset: 8px;">Mineral/Royalty Owners
+                        </a>
+                        <a href="#contact"
+                            class="block text-gray-200 cursor-pointer mt-1 py-3 transition duration-300 focus:outline-none focus:text-yellow-500 focus:underline hover:underline hover:text-yellow-500 uppercase"
+                            style="text-underline-offset: 8px;">Contact</a>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- Home -->
+            <div id="home" class="flex justify-center items-center h-full">
+                <h1 class="text-3xl lg:text-8xl md:text-5xl text-white"><span
+                        class="typed text-3xl lg:text-8xl md:text-5xl text-white"></span> Helix Energy
+                </h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- about section  -->
+    <section class="text-gray-600 body-font" id="about">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded boredr-2 border-blue-900" alt="hero"
+                    src="img/about.jpeg">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-6xl text-3xl mb-4 font-medium text-blue-900">ABOUT US</h1>
+                <p class="mb-8 leading-relaxed sm:text-2xl text-lg">Alpha Helix Energy is an independent Oil and Natural
+                    Gas
+                    producer located in the heart of West Virginia's Appalachian basin. Alpha Helix and its sister
+                    companies, Beta
+                    Helix and Delta Helix, acquire, manage and operate Oil and Natural Gas wells and properties across
+                    the state.
+                    Our expertise is in the acquisition of distressed properties and improving production and efficiency
+                    on these
+                    properties through well service, repair and recompletion techniques. We operate conventional and
+                    horizontal
+                    wells in over twenty counties across the state of West Virginia. Alpha Helix Energy's goal is to
+                    continue
+                    growing through acquisitions in order to provide a sustainable energy source to West Virginia and
+                    its
+                    surrounding areas for generations to come.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- service section  -->
+    <section id="services" class="py-24 bg-blue-800 text-white">
+        <div class="container mx-auto">
+            <div class="text-center pb-10">
+                <h1 class="text-4xl pb-16 font-bold">Services</h1>
+                <div class="flex flex-col md:flex-row gap-5 mx-6">
+                    <div class="w-full lg:w-1/3 service-pattern md:w-1/2 p-4">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <h2 class="text-2xl font-bold text-center mb-4">Acquisitions</h2>
+                            <p>
+                                Our growth model is based on the acquisition of existing oil and gas assets. We
+                                review
+                                and evaluate
+                                acquisition opportunities on a daily basis using resourceful techniques and
+                                target large
+                                packages of
+                                wells
+                                and leases for acquisition primarily in central West Virginia. We have
+                                Appalachian basin
+                                creates a
+                                unique
+                                understanding of the wells and formations in the area. Through service, repair
+                                reviewed
+                                packages all
+                                over
+                                the Appalachian basin including in Kentucky, Ohio, and Pennsylvania.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/3 service-pattern-1 md:w-1/2 p-4">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <h2 class="text-2xl font-bold text-center mb-4">Improvement</h2>
+                            <p>
+                                management personnel have developed thousands of oil and natural gas wells
+                                located on
+                                tens of
+                                thousands of acres of leased property in the state of West Virginia. Their
+                                experience in
+                                the
+                                Appalachian basin creates a unique understanding of the wells and formations in
+                                the
+                                area.
+                                Through service, repair, recompletion and production enhancement techniques we
+                                are able
+                                to
+                                recreate long lasting and productive oil and gas properties from assets often
+                                considered
+                                no
+                                longer economically viable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/3 service-pattern-2 md:w-1/2 p-4">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <h2 class="text-2xl font-bold text-center mb-4">>Operations</h2>
+                            <p>
+                                Operating over a thousand wells takes effective management and concurrent
+                                logistics. Our
+                                management team has decades of experience in oil and gas operations and manages
+                                all
+                                aspects
+                                of
+                                these operations including daily well maintenance, production enhancement, well
+                                services,
+                                oil
+                                and natural gas sales and the distribution of oil and gas revenues recompletion
+                                and
+                                production enhancement techniques we are able to
+                                recreate long lasting and productive oil and gas properties from assets often
+                                considered
+                                n.
+                            </p>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- minral section  -->
+    <section id="mineral" class="py-24 bg-blue-400">
+        <div class="container mx-auto px-4">
+            <div class="text-center pt-16">
+                <h1 class="text-4xl font-bold text-white">Mineral/Royalty Owners</h1>
+            </div>
+            <div class="flex justify-center py-20">
+                <div class="w-full lg:w-3/4 text-white px-4">
+                    <p class="text-lg leading-8 mb-4">Alpha Helix Energy, Beta Helix Energy, and Delta Helix
+                        Energy
+                        understand the
+                        importance of working with our partners including the surface and mineral owners. Maintaining
+                        good relationships with these partners is integral to operating a successful oil and natural gas
+                        business in the state of West Virginia. Please feel free to contact us with any questions you
+                        may have or provide simple contact information changes at <a
+                            href="mailto:support@alphahelixenergy.com" target="_blank"
+                            class="text-blue-400 underline">support@alphahelixenergy.com</a>.
+                    </p>
+                    <p class="text-lg leading-relaxed">If you are a royalty/mineral owner and have a transfer of
+                        ownership
+                        that you would
+                        like to report, please gather the information as depicted below and send it to us via email at
+                        <a href="mailto:support@alphahelixenergy.com" target="_blank"
+                            class="text-blue-400 underline">support@alphahelixenergy.com</a>
+                        or by mail to our offices as listed in the contact section.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-full lg:w-2/3 px-4">
+                    <div class="overflow-x-auto mt-3">
+                        <table class="min-w-full border border-primary text-white">
+                            <thead class="bg-blue-400">
+                                <tr>
+                                    <th class="px-4 py-2">Circumstance</th>
+                                    <th class="px-4 py-2">Required Documentation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border px-4 py-2">Deceased owner with a will (testate)</td>
+                                    <td class="border px-4 py-2">
+                                        <ul class="list-disc list-inside pl-5">
+                                            <li>Copy of the probated and recorded will</li>
+                                            <li>Copy of the Death Certificate</li>
+                                            <li>List of the heirs' contact information and W-9's</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-4 py-2">Deceased owner without a will (intestate)</td>
+                                    <td class="border px-4 py-2">
+                                        <ul class="list-disc list-inside pl-5">
+                                            <li>Estate Administration Documentation</li>
+                                            <li>Copy of the Death Certificate</li>
+                                            <li>List of the heirs' contact information and W-9's</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-4 py-2">Deed/Conveyance of property</td>
+                                    <td class="border px-4 py-2">
+                                        <ul class="list-disc list-inside pl-5">
+                                            <li>Copy of the recorded deed from the county wherein the property is
+                                                located
+                                            </li>
+                                            <li>W-9 for the new owner</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center pt-10">
+                <div class="w-full lg:w-2/3 text-white px-4">
+                    <p class="text-lg leading-8">We are pleased to announce that our company now offers direct
+                        deposit
+                        of your
+                        royalty checks. If you would like to take advantage of this service, please click on the link to
+                        the direct deposit form below, complete the form and send it back to our offices with all
+                        necessary attachments. This can be completed by email at <a
+                            href="mailto:support@alphahelixenergy.com" target="_blank"
+                            class="text-blue-400 underline">support@alphahelixenergy.com</a>
+                        or standard mail to our offices as listed in the contact section below.</p>
+                </div>
+            </div>
+
+            <div class="flex md:flex-row flex-col items-center justify-center mt-5">
+                <div class="xl:w-1/2  p-4">
+                    <div class="flex justify-center items-center">
+                        <h2 class="text-xl text-white font-bold mb-3">Alpha Helix Energy Forms</h2>
+                    </div>
+                    <div class="flex gap-5">
+                        <button
+                            class="flex  text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg">AHE
+                            Direct Deposit Form</button>
+                        <button
+                            class="flex  text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg">AHE
+                            Direct Deposit Form</button>
+                    </div>
+                </div>
+                <div class="xl:w-1/2  p-4">
+                    <div class="flex justify-center items-center">
+                        <h2 class="text-xl text-white font-bold mb-3">Beta Helix Energy Forms</h2>
+                    </div>
+                    <div class="flex gap-5">
+                        <button
+                            class="flex  text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg">AHE
+                            Direct Deposit Form</button>
+                        <button
+                            class="flex  text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg">AHE
+                            Direct Deposit Form</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mx-auto">
+                <div class="flex justify-center items-center">
+                    <h2 class="text-xl text-white font-bold mb-3">Delta Helix Energy Forms</h2>
+                </div>
+                <div class="flex gap-5">
+                    <button
+                        class="flex  text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg">AHE
+                        Direct Deposit Form</button>
+                    <button
+                        class="flex  text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-600 rounded text-lg">AHE
+                        Direct Deposit Form</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="w-full h-full">
+        <h1 class="text-center text-5xl md:py-24 py-12 text-blue-400">CONTACT</h1>
+        <div class="w-full md:flex justify-around md:px-16 px-10">
+            <div class="text-2xl gap-8">
+                <p class="py-4 font-bold">Alpha Helix Energy and Beta Helix Energy <br> Location</p>
+                <p class="py-4">📍 12864 Staunton TPKE Smithville, WV 26178</p>
+                <p class="py-4">📞 304-477-3333</p>
+                <p class="py-4">📞 304-477-3336</p>
+                <p class="py-4 mt-8 font-bold">Delta Helix Energy Location</p>
+                <p class="py-4">📍 1101 Rosemar Road, Suite D, Parkersburg, <br> WV 26105</p>
+            </div>
+            <div class="flex flex-col md:gap-2 py-4">
+                <div class="md:flex gap-4 text-gray-700">
+                    <input type="name" placeholder="First name"
+                        class="border-black border-2 my-2 md:my-0 py-1 px-4 text-lg rounded-md">
+                    <input type="name" placeholder="Second name"
+                        class="border-black border-2 py-1 px-4 text-lg rounded-md">
+                </div>
+                <div class="md:flex gap-4 my-4 text-gray-700">
+                    <input type="email" placeholder="E-mail"
+                        class="border-black border-2 py-1 px-4 my-2 md:my-0 text-lg rounded-md">
+                    <input type="phone-number" placeholder="Phone number"
+                        class="border-black border-2 py-1 px-4 text-lg rounded-md">
+                </div>
+                <textarea name="Message"
+                    class="border-black border-2 text-gray-400 h-24 py-1 px-4 text-lg rounded-md">Message</textarea>
+                <p class="md:text-center py-4 text-red-600">Enter CAPTCHA characters exactly as they appear, including
+                    the
+                    correct
+                </p>
+                <p class="md:text-center text-red-600"> case. If you are having trouble reading the CAPTCHA, please
+                    reload.
+                </p>
+                <div class="flex md:items-center md:justify-center gap-4 text-white mt-2 md:mt-0">
+                    <p class="border-2 border-black text-xl px-12 py-2 rounded-sm bg-gray-600">Ez77p</p>
+                    <button
+                        class="border-2 border-black text-xl px-4 py-2 rounded-sm bg-green-600 hover:bg-green-800">Reload</button>
+                </div>
+                <input type="name" class="border-black border-2 py-1 px-4 text-lg rounded-md mt-4 md:mt-0">
+                <p class="md:text-center text-2xl">CAPTCHA</p>
+                <div class="md:text-center">
+                    <button
+                        class="border-2 border-blue-400 text-xl px-4 py-2 rounded-sm hover:bg-blue-400">Submit</button>
+                </div>
+            </div>
+        </div>
+          
+    </section>
+
+    <!-- footer section  -->
+    <section class=" bg-remove flex justify-center items-center text-white body-font px-32 bg-[url('img/about.jpeg')]"
+        style="height: 60vh; background-position: center; background-size: cover; background-repeat: no-repeat; ">
+        <div class="flex md:flex-row flex-col justify-between items-center lg:gap-40 gap-10">
+            <h1 class="lg:text-7xl md:4xl text-2xlg text-white ">Call Us Now</h1>
+            <button class="md:text-2xl text-xl  bg-white md:px-10 md:py-5 px-5 py-2  rounded-md text-black">Call <a
+                    href="#">8766350681</a></button>
+        </div>
+    </section>
+
+    <div class="footer px-5">
+        <div class="items-center py-10">
+            <p class="text-center text-lg md:text-lg">Copyright © 2024 Alpha Helix Energy</p>
+            <p class="text-center text-lg md:text-lg">Designed, Managed and Hosted by <a href="#"
+                    class="text-yellow-300" style="color: rgb(234, 234, 99);">KDE Technology</a></p>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
